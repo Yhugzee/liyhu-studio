@@ -1,6 +1,7 @@
 import "./globals.scss";
 import type { Metadata, Viewport } from "next";
 import { Inter, Sora } from "next/font/google";
+import React from "react";
 
 const inter = Inter({
   subsets: ["latin"],
