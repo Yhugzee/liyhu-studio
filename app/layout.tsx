@@ -5,7 +5,7 @@ import React from "react";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-sans",
   fallback: [
     "system-ui",
     "Segoe UI",
@@ -19,7 +19,7 @@ const inter = Inter({
 
 const sora = Sora({
   subsets: ["latin"],
-  variable: "--font-sora",
+  variable: "--font-heading",
   fallback: [
     "system-ui",
     "Segoe UI",
@@ -49,8 +49,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" suppressHydrationWarning>
-    <body className={`${inter.variable} ${sora.variable} app-body`}>
+    <html
+      lang="fr"
+      suppressHydrationWarning
+      className={`${inter.variable} ${sora.variable}`}
+    >
+    <body className="app-body">
     {children}
     </body>
     </html>
