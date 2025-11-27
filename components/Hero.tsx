@@ -2,7 +2,7 @@ import styles from "./Hero.module.scss";
 
 export default function Hero() {
   return (
-    <section className={`${styles.hero} container-center`}>
+    <section className={styles.hero}>
       <p className={styles.tagline}>LiYhu Studio</p>
 
       <h1 className={styles.title}>
