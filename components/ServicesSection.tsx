@@ -1,9 +1,24 @@
 import styles from "./ServicesSection.module.scss";
+import Image from "next/image";
 
 export default function ServicesSection() {
   return (
     <section id="services" className={styles.section}>
-      <div className="container-center">
+      <div className={styles.bgWrap}>
+        <Image
+          alt="Services Banner"
+          src="/Services_Banner.webp"
+          quality={75}
+          fill
+          sizes="100vw"
+          style={{
+            objectPosition: 'right',
+          }}
+        />
+        <div className={styles.overlay} />
+      </div>
+
+      <div className={`container-center ${styles.content}`}>
         <header className={styles.header}>
           <h2 className={styles.title}>Services</h2>
         </header>
